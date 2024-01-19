@@ -1,13 +1,10 @@
 import { get_config } from '@/config'
-import type { Environment } from '@/types'
 
-async function main(_: Request, environment: Environment): Promise<Response> {
+async function main(_: Request, environment: Record<string, unknown>): Promise<Response> {
   const config = get_config(environment)
 
   return fetch(config.ANISETTE_ENDPOINT, {
-    headers: {
-      Authorization: `Bearer ${config.HF_TOKEN}`
-    }
+    headers: { Authorization: `Bearer ${config.HF_TOKEN}` }
   })
 }
 
