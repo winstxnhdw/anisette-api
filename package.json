@@ -2,8 +2,9 @@
   "scripts": {
     "lint": "eslint .",
     "dev": "wrangler dev",
-    "deploy": "wrangler publish",
-    "test": "bun test --watch"
+    "deploy": "wrangler deploy",
+    "test": "bun test --watch",
+    "generate": "bun scripts/get_token.ts"
   },
   "dependencies": {
     "tslib": "^2.6.2",

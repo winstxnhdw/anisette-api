@@ -10,6 +10,14 @@
 
 A self-hosted anisette server for SideStore.
 
+## Usage
+
+The token you may use to authenticate the API can be generated with the following command.
+
+```bash
+bun generate
+```
+
 ## Development
 
 Install all dependencies.
