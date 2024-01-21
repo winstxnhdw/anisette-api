@@ -12,6 +12,12 @@ A self-hosted anisette server for SideStore.
 
 ## Usage
 
+Populate your `.env` file.
+
+```bash
+echo "CLOUDFLARE_API_TOKEN=$CLOUDFLARE_API_TOKEN" > .env
+```
+
 The token you may use to authenticate the API can be generated with the following command.
 
 ```bash
