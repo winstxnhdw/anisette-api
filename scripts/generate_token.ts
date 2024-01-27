@@ -1,4 +1,4 @@
-import { spawn } from 'bun'
+import { $ } from 'bun'
 import { randomBytes } from 'crypto'
 
 async function main() {
@@ -9,11 +9,7 @@ async function main() {
     return
   }
 
-  const process = spawn(['npx', 'wrangler', 'secret', 'put', 'TOKEN'], {
-    stdin: new TextEncoder().encode(generated_token)
-  })
-
-  const response = await new Response(process.stdout).text()
+  const response = await $`echo ${generated_token} | npx wrangler secret put TOKEN`.text()
   console.log(`\n${response}`)
 }
 

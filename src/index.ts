@@ -1,6 +1,6 @@
 import { get_config } from '@/config'
 
-async function main(request: Request, environment: Record<string, unknown>): Promise<Response> {
+async function main(request: Request, environment: Record<string, unknown>) {
   const url = new URL(request.url)
   const config = get_config(environment)
 
