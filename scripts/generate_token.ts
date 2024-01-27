@@ -4,9 +4,8 @@ import { randomBytes } from 'crypto'
 async function main() {
   const generated_token = randomBytes(48).toString('base64url')
   console.log(`[+] Your generated token is ${generated_token}`)
-  const save = prompt('[?] Would you like to use this token? (y/N)')?.toLowerCase()
 
-  if (save !== 'y') {
+  if (prompt('[?] Would you like to use this token? (y/N)')?.toLowerCase() !== 'y') {
     return
   }
 
