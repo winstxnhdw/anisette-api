@@ -2,7 +2,7 @@
 
 [![main.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/main.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/main.yml)
 [![proxy.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/proxy.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/proxy.yml)
-[![scripts.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/scripts.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/scripts.yml)
+[![formatter.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/formatter.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/formatter.yml)
 [![warmer.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/warmer.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/warmer.yml)
 [![keep-alive.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/keep-alive.yml)
 
