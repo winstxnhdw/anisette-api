@@ -1,7 +1,8 @@
 # anisette-api
 
 [![main.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/main.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/main.yml)
-[![proxy.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/proxy.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/proxy.yml)
+[![deploy-proxy.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/deploy-proxy.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/deploy-proxy.yml)
+[![test.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/test.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/test.yml)
 [![formatter.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/formatter.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/formatter.yml)
 [![warmer.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/warmer.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/warmer.yml)
 [![keep-alive.yml](https://github.com/winstxnhdw/anisette-api/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/winstxnhdw/anisette-api/actions/workflows/keep-alive.yml)

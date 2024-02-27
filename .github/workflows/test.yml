@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  push:
+    paths:
+      - .github/workflows/test.yml
+      - .eslintrc
+      - .eslintignore
+      - tsconfig.json
+      - package.json
+      - bun.lockb
+      - '*.ts'
+
+jobs:
+  test:
+    uses: winstxnhdw/actions/.github/workflows/bun.yml@main
+    with:
+      disable-test: true
+      disable-build: true

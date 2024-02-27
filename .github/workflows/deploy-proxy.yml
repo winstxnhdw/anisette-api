@@ -1,25 +1,19 @@
-name: Proxy
+name: Deploy Proxy
 
 on:
   push:
     branches: main
     paths:
-      - .github/workflows/proxy.yml
-      - tsconfig.json
+      - .github/workflows/deploy-proxy.yml
       - wrangler.toml
-      - package.json
-      - bun.lockb
-      - src/*
+  workflow_run:
+    workflows: Test
+    branches: main
+    types: completed
 
 jobs:
-  test:
-    uses: winstxnhdw/actions/.github/workflows/bun.yml@main
-    with:
-      disable-test: true
-      disable-build: true
-
   deploy:
-    needs: test
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:
@@ -33,6 +27,8 @@ jobs:
 
       - name: Publish
         uses: cloudflare/wrangler-action@v3.4.1
+        env:
+          WORKER_ENDPOINT: ${{ secrets.WORKER_ENDPOINT }}
         with:
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           apiToken: ${{ secrets.CF_API_TOKEN }}
