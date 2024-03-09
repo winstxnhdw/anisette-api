@@ -1,17 +1,8 @@
 name: Test
 
 on:
-  pull_request_target:
-    types: [opened, reopened]
   pull_request:
-    paths:
-      - .github/workflows/main.yml
-      - .eslintrc
-      - .eslintignore
-      - tsconfig.json
-      - package.json
-      - bun.lockb
-      - '*.ts'
+    types: opened
   push:
     paths:
       - .github/workflows/test.yml
