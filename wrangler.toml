@@ -1,4 +1,5 @@
 name = "anisette-api"
 main = "src/index.ts"
 compatibility_date = "2023-03-25"
+compatibility_flags = ["nodejs_compat", "nodejs_als"]
 minify = true

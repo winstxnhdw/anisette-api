@@ -9,10 +9,10 @@ async function main(request: Request, environment: Record<string, unknown>) {
   }
 
   return fetch(config.ANISETTE_ENDPOINT, {
-    headers: { Authorization: `Bearer ${config.HF_TOKEN}` }
+    headers: { Authorization: `Bearer ${config.HF_TOKEN}` },
   })
 }
 
 export default {
-  fetch: main
+  fetch: main,
 }

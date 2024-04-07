@@ -1,5 +1,5 @@
+import { randomBytes } from 'node:crypto'
 import { $ } from 'bun'
-import { randomBytes } from 'crypto'
 
 async function main() {
   const generated_token = randomBytes(48).toString('base64url')

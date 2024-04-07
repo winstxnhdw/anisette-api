@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "eslint .",
+    "lint": "biome check .",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "test": "bun test --watch",
@@ -11,13 +11,9 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.6.4",
     "@cloudflare/workers-types": "^4.20240117.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
     "bun-types": "^1.0.24",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.4",
     "typescript": "^5.3.3",
     "wrangler": "^3.23.0"
   }
