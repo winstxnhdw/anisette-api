@@ -20,12 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REPOSITORY_NAME: ${{ github.event.repository.name }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
     steps:
       - name: cURL the API
         run: |
           healthcheck() {
-            curl https://$GITHUB_REPOSITORY_OWNER-$REPOSITORY_NAME.hf.space
+            curl https://$GITHUB_REPOSITORY_OWNER-$REPOSITORY_NAME.hf.space \
+              -H "Authorization: Bearer $HF_TOKEN" | jq '.["X-Apple-I-Client-Time"]'
           }
 
           healthcheck || healthcheck || healthcheck
